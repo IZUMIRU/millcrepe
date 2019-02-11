@@ -13,7 +13,7 @@ test:
     - echo "Nothing to do here"
 
 deployment:
-  production: # just a label; label names are completely up to you
+  production:
     branch: master
     commands:
-      - aws s3 sync s3://millcrepe.net/ --delete
+      - aws s3 sync html/ s3://millcrepe.net/ --delete
