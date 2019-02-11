@@ -9,8 +9,10 @@ class Top extends Component {
     return (
       <Wrapper>
         <TopWrapper>
-          <TitleLogo>ミルクレープ</TitleLogo>
-          <H1>20代真っ只中、「好きなことで生きていく」ギルドチーム</H1>
+          <TitleLogo>ミルクレープ</TitleLogo><br />
+          <H1>クリームは時間が経つと口当たりが悪くなるため、素早く塗り重ねる必要があります。<br />
+          一方クレープは乱雑に扱うと破けてしまうため、正確に丁寧に美しい形に重ねないといけません。<br /><br />
+          私たちは、そんな「素早さ、正確さ、丁寧さ」を兼ね備えたプロフェッショナルギルドです。</H1>
         </TopWrapper>
       </Wrapper>
     );

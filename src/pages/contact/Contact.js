@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { withRouter } from 'react-router';
 import Color from '../common/Color'
 import { H3 } from '../common/Typography'
-import { Wrapper, ContentWrapper, Contents } from '../common/Layout'
+import { Wrapper, ContentWrapper, Contents } from '../common/LayoutContact'
+import Emole from '../../assets/image/emole.png'
 
 // component
 class Works extends Component {
@@ -13,14 +14,15 @@ class Works extends Component {
       <Wrapper>
         <ContentWrapper>
           <Contents>
-            <TopContent>
-              <H3>CONTACT</H3>
-            </TopContent>
-          </Contents>
-          <Contents>
+            <H3>CONTACT</H3>
             <ButtonContent>
               <FormButton onClick={()=> window.open("https://goo.gl/forms/xMwCrtNN5nvhtrlC2", "_blank")}>お問い合わせ</FormButton>
             </ButtonContent>
+          </Contents>
+          <Contents>
+          <TitleLogo>協賛<br />
+            <Image src={Emole} />
+          </TitleLogo>
           </Contents>
         </ContentWrapper>
       </Wrapper>
@@ -29,12 +31,9 @@ class Works extends Component {
 }
 
 // view(CSS in JS)
-const TopContent = styled.div`
-  margin-bottom: 15rem;
-  text-align: center;
-`;
 
 const ButtonContent = styled.div`
+  margin-top: 1rem;
 `;
 
 const FormButton = styled.button`
@@ -48,6 +47,14 @@ const FormButton = styled.button`
   &:hover {
     cursor: pointer;
   }
+`;
+
+const TitleLogo = styled.div`
+  margin-top: 1rem;
+`;
+
+const Image = styled.img`
+  width: 25vw;
 `;
 
 // export
