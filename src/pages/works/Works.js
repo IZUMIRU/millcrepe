@@ -5,6 +5,8 @@ import Works01 from '../../assets/image/works_01.svg'
 import Works02 from '../../assets/image/works_02.svg'
 import Works03 from '../../assets/image/works_03.svg'
 import Works06 from '../../assets/image/works_06.svg'
+import Works07 from '../../assets/image/works_07.svg'
+import Works08 from '../../assets/image/works_08.svg'
 import { H3 } from '../common/Typography'
 import { Wrapper, ContentWrapper, Contents } from '../common/LayoutWorks'
 import Color from '../common/Color'
@@ -50,6 +52,18 @@ class Works extends Component {
                 <WorksImage src={Works06}/>
                 <Rep>
                   <RepName>GASHI portfolio</RepName>
+                </Rep>
+              </ListContent>
+              <ListContent onClick={()=> window.open("https://workhacks.biz/", "_blank")}>
+                <WorksImage src={Works07}/>
+                <Rep>
+                  <RepName>ワークハックス</RepName>
+                </Rep>
+              </ListContent>
+              <ListContent onClick={()=> window.open("https://netbuyking.net/", "_blank")}>
+                <WorksImage src={Works08}/>
+                <Rep>
+                  <RepName>Net Buy King</RepName>
                 </Rep>
               </ListContent>
             </Lists>
