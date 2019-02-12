@@ -5,7 +5,7 @@ jobs:
     environment:
       - AWS_S3_BUCKET_NAME: millcrepe.net
     docker:
-      - image: innovatorjapan/awscli:latest
+      - image: node:9.4.0
     steps:
       - checkout
       - run:
