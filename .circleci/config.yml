@@ -1,28 +1,16 @@
 version: 2
 jobs:
   build:
-    machine: true
-  deploy:
+    working_directory: ~/repo
+    environment:
+      - AWS_S3_BUCKET_NAME: millcrepe.net
     docker:
-      - image: circleci/python:2.7-jessie
-    working_directory: ~/circleci-docs
+      - image: innovatorjapan/awscli:latest
     steps:
+      - checkout
       - run:
-          name: Install awscli
-          command: sudo pip install awscli
-      - run:
-          name: Deploy to S3
-          command: aws s3 sync s3://millcrepe.net/ --delete
-
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: 
-                - master
+          name: Deploy to S3 if branch is Master.
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              aws s3 sync ~/repo s3://${AWS_S3_BUCKET_NAME}/ --exact-timestamps --delete
+            fi
