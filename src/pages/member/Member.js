@@ -30,8 +30,8 @@ class Member extends Component {
               <ListContent>
                 <MemberImage src={Member02}/>
                 <Rep>
-                  <RepText>Represent</RepText><br />
-                  <RepName>Name here</RepName>
+                  <RepText>Frontend Engineer</RepText><br />
+                  <RepName>KEI Oyama</RepName>
                 </Rep>
               </ListContent>
               <ListContent>

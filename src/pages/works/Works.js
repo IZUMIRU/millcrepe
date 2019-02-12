@@ -4,9 +4,11 @@ import Image004 from '../../assets/image/sample_004.png'
 import Works01 from '../../assets/image/works_01.svg'
 import Works02 from '../../assets/image/works_02.svg'
 import Works03 from '../../assets/image/works_03.svg'
-import Works05 from '../../assets/image/works_05.svg'
+import Works06 from '../../assets/image/works_06.svg'
+import Works07 from '../../assets/image/works_07.svg'
+import Works08 from '../../assets/image/works_08.svg'
 import { H3 } from '../common/Typography'
-import { Wrapper, ContentWrapper, Contents } from '../common/Layout'
+import { Wrapper, ContentWrapper, Contents } from '../common/LayoutWorks'
 import Color from '../common/Color'
 
 // component
@@ -21,7 +23,6 @@ class Works extends Component {
             </TopContent>
           </Contents>
           <Contents>
-          <Contents>
             <Lists>
               <ListContent onClick={()=> window.open("https://www.wantedly.com/users/4163408", "_blank")}>
                 <WorksImage src={Works01}/>
@@ -32,7 +33,7 @@ class Works extends Component {
               <ListContent onClick={()=> window.open("https://dsjob.shikakara.jp/", "_blank")}>
                 <WorksImage src={Works02}/>
                 <Rep>
-                  <RepName>シカカラDS求人（サービス終了）</RepName>
+                  <RepName>シカカラDS求人</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://www.wantedly.com/users/18049334", "_blank")}>
@@ -47,16 +48,25 @@ class Works extends Component {
                   <RepName>emole</RepName>
                 </Rep>
               </ListContent>
-              {/*
               <ListContent onClick={()=> window.open("https://www.behance.net/shingashi09a9b", "_blank")}>
-                <WorksImage src={Works05}/>
+                <WorksImage src={Works06}/>
                 <Rep>
                   <RepName>GASHI portfolio</RepName>
                 </Rep>
               </ListContent>
-              */}
+              <ListContent onClick={()=> window.open("https://workhacks.biz/", "_blank")}>
+                <WorksImage src={Works07}/>
+                <Rep>
+                  <RepName>ワークハックス</RepName>
+                </Rep>
+              </ListContent>
+              <ListContent onClick={()=> window.open("https://netbuyking.net/", "_blank")}>
+                <WorksImage src={Works08}/>
+                <Rep>
+                  <RepName>Net Buy King</RepName>
+                </Rep>
+              </ListContent>
             </Lists>
-          </Contents>
           </Contents>
         </ContentWrapper>
       </Wrapper>

@@ -6,7 +6,6 @@ import About from './pages/about/About'
 import Member from './pages/member/Member'
 import Works from './pages/works/Works'
 import Contact from './pages/contact/Contact'
-import Sponsor from './pages/sponsor/Sponsor'
 
 // component
 class App extends Component {
@@ -21,7 +20,6 @@ class App extends Component {
           <Switch>
             <Route path={'/'} component={Contact}/>
           </Switch>
-          <Sponsor />
         </div>
       </BrowserRouter>
     )
