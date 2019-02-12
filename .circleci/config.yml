@@ -9,8 +9,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Build
+          command: yarn build
+      - run:
           name: Deploy to S3 if branch is Master.
           command: |
             # if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              GENERATE_SOURCEMAP=false yarn run build && aws s3 sync build/ s3://${AWS_S3_BUCKET_NAME}/ --exact-timestamps --delete
+              aws s3 sync build/ s3://${AWS_S3_BUCKET_NAME}/ --exact-timestamps --delete
             # fi
