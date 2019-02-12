@@ -1,5 +1,7 @@
 version: 2
 jobs:
+  build:
+    machine: true
   deploy:
     docker:
       - image: circleci/python:2.7-jessie
@@ -22,4 +24,5 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: 
+                - master
