@@ -5,15 +5,9 @@ jobs:
     environment:
       - AWS_S3_BUCKET_NAME: millcrepe.net
     docker:
-      - image: node:9.4.0
+      - image: innovatorjapan/awscli:latest
     steps:
       - checkout
-      - run:
-          name: Install dependencies
-          command: yarn
-      - run:
-          name: Build
-          command: yarn build
       - run:
           name: Deploy to S3 if branch is Master.
           command: |
