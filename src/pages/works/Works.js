@@ -41,7 +41,7 @@ class Works extends Component {
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://netbuyking.net/manga/", "_blank")}>
-                <WorksImage src={Works08}/>
+                <WorksImage src={Image004}/>
                 <Rep>
                   <RepName>楽に早く高く売れるネット漫画買取メディア</RepName>
                 </Rep>

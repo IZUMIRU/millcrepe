@@ -20,21 +20,21 @@ class Member extends Component {
           </Contents>
           <Contents>
             <Lists>
-              <ListContent>
+              <ListContent onClick={()=> window.open("https://twitter.com/1182E", "_blank")}>
                 <MemberImage src={Member01}/>
                 <Rep>
                   <RepText>UI / UX Designer</RepText><br />
                   <RepName>AKIHIDE Egashira</RepName>
                 </Rep>
               </ListContent>
-              <ListContent>
+              <ListContent　onClick={()=> window.open("https://twitter.com/agri_business_k", "_blank")}>
                 <MemberImage src={Member02}/>
                 <Rep>
                   <RepText>Frontend Engineer</RepText><br />
                   <RepName>KEI Oyama</RepName>
                 </Rep>
               </ListContent>
-              <ListContent>
+              <ListContent onClick={()=> window.open("https://twitter.com/IZUMIRU0313", "_blank")}>
                 <MemberImage src={Member03}/>
                 <Rep>
                   <RepText>PM / ServerSide Engineer</RepText><br />
@@ -64,6 +64,7 @@ const Lists = styled.ul`
 `;
 
 const ListContent = styled.li`
+  cursor: pointer;
   margin-right: 10px;
   object-fit: cover;
   overflow: hidden;
