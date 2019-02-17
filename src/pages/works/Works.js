@@ -22,34 +22,34 @@ class Works extends Component {
           </Contents>
           <Contents>
             <Lists>
-              <ListContent onClick={()=> window.open("https://dsjob.shikakara.jp/", "_blank")}>
-                <WorksImage src={Works02}/>
-                <Rep>
-                  <RepName>シカカラDS求人</RepName>
-                </Rep>
-              </ListContent>
               <ListContent onClick={()=> window.open("https://emole.jp/", "_blank")}>
                 <WorksImage src={Image004}/>
                 <Rep>
-                  <RepName>emole</RepName>
+                  <RepName>やりたいを実現する仲間と繋がる<br />コミュニティプラットフォーム</RepName>
                 </Rep>
               </ListContent>
-              <ListContent onClick={()=> window.open("https://www.behance.net/shingashi09a9b", "_blank")}>
-                <WorksImage src={Works06}/>
+              <ListContent onClick={()=> window.open("https://dsjob.shikakara.jp/", "_blank")}>
+                <WorksImage src={Works02}/>
                 <Rep>
-                  <RepName>GASHI portfolio</RepName>
+                  <RepName>デンタルスタッフの求人情報サイト</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://workhacks.biz/", "_blank")}>
                 <WorksImage src={Works07}/>
                 <Rep>
-                  <RepName>ワークハックス</RepName>
+                  <RepName>新時代の働き方を提案するメディア</RepName>
                 </Rep>
               </ListContent>
-              <ListContent onClick={()=> window.open("https://netbuyking.net/", "_blank")}>
-                <WorksImage src={Works08}/>
+              <ListContent onClick={()=> window.open("https://netbuyking.net/manga/", "_blank")}>
+                <WorksImage src={Image004}/>
                 <Rep>
-                  <RepName>Net Buy King</RepName>
+                  <RepName>楽に早く高く売れるネット漫画買取メディア</RepName>
+                </Rep>
+              </ListContent>
+              <ListContent onClick={()=> window.open("https://www.behance.net/shingashi09a9b", "_blank")}>
+                <WorksImage src={Works06}/>
+                <Rep>
+                  <RepName>Design Portfolio</RepName>
                 </Rep>
               </ListContent>
             </Lists>
@@ -84,7 +84,7 @@ const ListContent = styled.li`
 `;
 
 const RepName = styled.text`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 	text-align: center;
 `;
 

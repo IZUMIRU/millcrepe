@@ -17,20 +17,20 @@ class About extends Component {
           </Contents>
           <Contents>
             <LeftBar>
-              <H2>UI / UX DESIGN</H2><br />
-              <Text>アプリケーションのUXからUIデザインなどの業務を承ります。</Text>
+              <H2>UX / UI Design</H2><br />
+              <Text>利用者の体験に影響を及ぼす全ての要素（戦略、要件、構造、骨格、表層）にコミットします。</Text>
             </LeftBar>
           </Contents>
           <Contents>
             <RightBar>
-              <H2>App / Web Development</H2><br />
-              <Text>アプリケーションの開発から納品まで行います。</Text>
+              <H2>Web / App Development</H2><br />
+              <Text>Web、iOS、Androidアプリの開発から納品まで行います。</Text>
             </RightBar>
           </Contents>
           <Contents>
             <LeftBar>
               <H2>CMS Architecture</H2><br />
-              <Text>WordPressを使用したHP公開、オリジナルテーマ作成などを行います。</Text>
+              <Text>WordPressを使用したコーポレートサイトやメディア、オリジナルテーマ作成を承ります。</Text>
             </LeftBar>
           </Contents>
         </ContentWrapper>
