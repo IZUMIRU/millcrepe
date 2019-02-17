@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Image004 from '../../assets/image/sample_004.png'
-import Works01 from '../../assets/image/works_01.svg'
 import Works02 from '../../assets/image/works_02.svg'
-import Works03 from '../../assets/image/works_03.svg'
 import Works06 from '../../assets/image/works_06.svg'
 import Works07 from '../../assets/image/works_07.svg'
 import Works08 from '../../assets/image/works_08.svg'
@@ -24,46 +22,34 @@ class Works extends Component {
           </Contents>
           <Contents>
             <Lists>
-              <ListContent onClick={()=> window.open("https://www.wantedly.com/users/4163408", "_blank")}>
-                <WorksImage src={Works01}/>
+              <ListContent onClick={()=> window.open("https://emole.jp/", "_blank")}>
+                <WorksImage src={Image004}/>
                 <Rep>
-                  <RepName>RYOSUKE portfolio</RepName>
+                  <RepName>やりたいを実現する仲間と繋がる<br />コミュニティプラットフォーム</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://dsjob.shikakara.jp/", "_blank")}>
                 <WorksImage src={Works02}/>
                 <Rep>
-                  <RepName>シカカラDS求人</RepName>
-                </Rep>
-              </ListContent>
-              <ListContent onClick={()=> window.open("https://www.wantedly.com/users/18049334", "_blank")}>
-                <WorksImage src={Works03}/>
-                <Rep>
-                  <RepName>OYAMA portfolio</RepName>
-                </Rep>
-              </ListContent>
-              <ListContent onClick={()=> window.open("https://emole.jp/", "_blank")}>
-                <WorksImage src={Image004}/>
-                <Rep>
-                  <RepName>emole</RepName>
-                </Rep>
-              </ListContent>
-              <ListContent onClick={()=> window.open("https://www.behance.net/shingashi09a9b", "_blank")}>
-                <WorksImage src={Works06}/>
-                <Rep>
-                  <RepName>GASHI portfolio</RepName>
+                  <RepName>デンタルスタッフの求人情報サイト</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://workhacks.biz/", "_blank")}>
                 <WorksImage src={Works07}/>
                 <Rep>
-                  <RepName>ワークハックス</RepName>
+                  <RepName>新時代の働き方を提案するメディア</RepName>
                 </Rep>
               </ListContent>
-              <ListContent onClick={()=> window.open("https://netbuyking.net/", "_blank")}>
+              <ListContent onClick={()=> window.open("https://netbuyking.net/manga/", "_blank")}>
                 <WorksImage src={Works08}/>
                 <Rep>
-                  <RepName>Net Buy King</RepName>
+                  <RepName>楽に早く高く売れるネット漫画買取メディア</RepName>
+                </Rep>
+              </ListContent>
+              <ListContent onClick={()=> window.open("https://www.behance.net/shingashi09a9b", "_blank")}>
+                <WorksImage src={Works06}/>
+                <Rep>
+                  <RepName>Design Portfolio</RepName>
                 </Rep>
               </ListContent>
             </Lists>
@@ -98,7 +84,7 @@ const ListContent = styled.li`
 `;
 
 const RepName = styled.text`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 	text-align: center;
 `;
 
