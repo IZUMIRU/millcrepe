@@ -24,22 +24,10 @@ class Works extends Component {
           </Contents>
           <Contents>
             <Lists>
-              <ListContent onClick={()=> window.open("https://www.wantedly.com/users/4163408", "_blank")}>
-                <WorksImage src={Works01}/>
-                <Rep>
-                  <RepName>RYOSUKE portfolio</RepName>
-                </Rep>
-              </ListContent>
               <ListContent onClick={()=> window.open("https://dsjob.shikakara.jp/", "_blank")}>
                 <WorksImage src={Works02}/>
                 <Rep>
                   <RepName>シカカラDS求人</RepName>
-                </Rep>
-              </ListContent>
-              <ListContent onClick={()=> window.open("https://www.wantedly.com/users/18049334", "_blank")}>
-                <WorksImage src={Works03}/>
-                <Rep>
-                  <RepName>OYAMA portfolio</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://emole.jp/", "_blank")}>

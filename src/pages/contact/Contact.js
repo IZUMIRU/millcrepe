@@ -18,11 +18,8 @@ class Works extends Component {
             <ButtonContent>
               <FormButton onClick={()=> window.open("https://goo.gl/forms/xMwCrtNN5nvhtrlC2", "_blank")}>お問い合わせ</FormButton>
             </ButtonContent>
-          </Contents>
-          <Contents>
-          <TitleLogo>協賛<br />
-            <Image src={Emole} />
-          </TitleLogo>
+            <br />
+            協賛：<Image src={Emole} onClick={()=> window.open("https://emole.jp/", "_blank")}/>
           </Contents>
         </ContentWrapper>
       </Wrapper>
@@ -54,7 +51,8 @@ const TitleLogo = styled.div`
 `;
 
 const Image = styled.img`
-  width: 25vw;
+  width: 5vw;
+  cursor: pointer;
 `;
 
 // export
