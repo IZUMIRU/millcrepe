@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Image004 from '../../assets/image/sample_004.png'
-import Works02 from '../../assets/image/works_02.svg'
-import Works06 from '../../assets/image/works_06.svg'
-import Works07 from '../../assets/image/works_07.svg'
-import Works08 from '../../assets/image/works_08.svg'
+import Works01 from '../../assets/image/works_01.png'
+import Works02 from '../../assets/image/works_02.png'
+import Works03 from '../../assets/image/works_03.png'
+import Works04 from '../../assets/image/works_04.png'
+import Works05 from '../../assets/image/works_05.png'
 import { H3 } from '../common/Typography'
 import { Wrapper, ContentWrapper, Contents } from '../common/LayoutWorks'
 import Color from '../common/Color'
@@ -23,7 +23,7 @@ class Works extends Component {
           <Contents>
             <Lists>
               <ListContent onClick={()=> window.open("https://emole.jp/", "_blank")}>
-                <WorksImage src={Image004}/>
+                <WorksImage src={Works01}/>
                 <Rep>
                   <RepName>やりたいを実現する仲間と繋がる<br />コミュニティプラットフォーム</RepName>
                 </Rep>
@@ -35,21 +35,21 @@ class Works extends Component {
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://workhacks.biz/", "_blank")}>
-                <WorksImage src={Works07}/>
+                <WorksImage src={Works03}/>
                 <Rep>
                   <RepName>新時代の働き方を提案するメディア</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://netbuyking.net/manga/", "_blank")}>
-                <WorksImage src={Image004}/>
+                <WorksImage src={Works04}/>
                 <Rep>
                   <RepName>楽に早く高く売れるネット漫画買取メディア</RepName>
                 </Rep>
               </ListContent>
               <ListContent onClick={()=> window.open("https://www.behance.net/shingashi09a9b", "_blank")}>
-                <WorksImage src={Works06}/>
+                <WorksImage src={Works05}/>
                 <Rep>
-                  <RepName>Design Portfolio</RepName>
+                  <RepName>Design Collection</RepName>
                 </Rep>
               </ListContent>
             </Lists>
