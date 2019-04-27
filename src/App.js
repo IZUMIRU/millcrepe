@@ -19,7 +19,7 @@ class App extends Component {
           <Works />
           <Switch>
             <Route path={'/'} component={Contact}/>
-          </Switch>
+          </Switch> 
         </div>
       </BrowserRouter>
     )
