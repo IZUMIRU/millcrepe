@@ -1,8 +1,25 @@
 ## emole_developer_lp 環境構築について(2019/02/05現在)
-### 開発言語
-今回はLPではあるが、通常のHTML/CSSではなく、React(JavaScript)で開発していく。
-単純にコンポーネント単位で修正がしやすいからである。
-あと、共通部分を管理しやすいためでもある。
+### 概要
+フリーランスチームギルド"millcrepe"のcorporate website。
+開発言語は
+- HTML5
+- CSS3
+- Sass
+- JS
+- jQuery
+の5つを使用。
+
+### ファイル構造
+.
+|--- README.md
+|--- index.html // メイン
+|--- css
+|    |--- normalize.css // CSSの初期化
+|    |--- styles.css // webサイトのスタイルを設定
+|--- js
+|    |--- index.js // 動的部分を操作
+|--- img // 画像を保存する
+|--- favicon
 
 ### 初期セットアップ
 基本的にはプルリクエストにて共同開発・管理を行う。
@@ -23,6 +40,3 @@ reviewerが大丈夫と判断すれば、masterにmergeをする。
 `emergency`: 緊急の修正<br />
 例）feature/hoge001
 
-### styleについて
-ここでは、`CSS in JS(styled-components)`を用いる。<br />
-詳しくは、[こちら](https://www.styled-components.com/docs/basics)から。<br />
