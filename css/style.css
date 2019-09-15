@@ -1,4 +1,7 @@
-div {
-  display: block; }
-  div p {
-    margin-top: 2rem; }
+@charset "UTF-8";
+/*!
+ * custom style(2019.09.15)
+ * Sassで書いていく
+ */
+body {
+  font-family: "YuGothic", Arial; }

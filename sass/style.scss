@@ -1,8 +1,4 @@
-div {
-  display: block;
-
-  p {
-    margin-top: 2rem;
-  }
-}
-
+/* 
+this file manages the whole sass files.
+*/
+@import "/element/*"
