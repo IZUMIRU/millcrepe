@@ -2,6 +2,9 @@
 // color
 $white: #fff;
 $black: #000;
+$btn-normal: #707070;
+$btn-hover: #4E4E4E;
+
 $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
@@ -33,6 +36,10 @@ $breakpoints: (
   'md': 'screen and (min-width: 768px)',
   'lg': 'screen and (min-width: 992px)',
   'xl': 'screen and (min-width: 1200px)',
+  'sm-max': 'screen and (max-width: 576px)',
+  'md-max': 'screen and (max-width: 768px)',
+  'lg-max': 'screen and (max-width: 992px)',
+  'xl-max': 'screen and (max-width: 1200px)',
 ) !default;
 
 @mixin mq($breakpoint: md) {

@@ -1,0 +1,21 @@
+.btn-normal {
+  background-color: $btn-normal;
+  border-radius: 0.5rem;
+  color: $white;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: inherit;
+  margin: 0;
+  padding: 2rem 10rem;
+  transition: 0.3s;
+
+  @include mq(sm-max) {
+    font-size: 0.75rem;
+    padding: 1rem 5rem;
+  }
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
