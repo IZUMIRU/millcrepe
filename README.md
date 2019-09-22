@@ -40,3 +40,12 @@ reviewerが大丈夫と判断すれば、masterにmergeをする。
 `emergency`: 緊急の修正<br />
 例）feature/hoge001
 
+### Sassについて
+CSSに関しては、[Sass](https://sass-lang.com/)を使用している。
+sassフォルダ配下にカスタマイズしていき、これをcssにcompileする。
+
+```
+# SASSファイルをCSSにコンパイル
+# 常に監視してくれるので、コマンド打ったら放置。
+$ gulp
+```
