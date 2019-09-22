@@ -1,7 +1,20 @@
-div {
-  padding: 0;
-}
+@charset "UTF-8";
+/*
+breakpointの設定方法
+mixinで指定してあるので、
+md()の中に、$breakpointsの変数を入れることで、
+media queryが使用できるようになる。
 
-div p {
-  margin: 0;
-}
+==========
+sm: スマートフォンの大きさ
+md: タブレットの大きさ
+lg: パソコンの大きさ
+xd: large desktopの大きさ
+==========
+
+[使用方法] 対象項目に、
+
+`@include mq(lg);`
+
+のように使用すると良い。
+*/

@@ -5,7 +5,7 @@ var notify = require('gulp-notify');
 
 //sassコンパイル
 gulp.task("sass",function(done){
-    gulp.src("sass/*.scss")
+    gulp.src("sass/style.scss")
     .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(gulp.dest("./css"));

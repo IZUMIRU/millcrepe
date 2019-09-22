@@ -1,0 +1,55 @@
+// 様々な変数を記載していく。
+// color
+$primary-color: ;
+$secondary-color: ;
+$white: #fff;
+$black: #000;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+
+
+
+
+
+
+
+// typography
+
+
+
+// layout
+/*
+breakpointの設定方法
+mixinで指定してあるので、
+md()の中に、$breakpointsの変数を入れることで、
+media queryが使用できるようになる。
+
+==========
+sm: スマートフォンの大きさ
+md: タブレットの大きさ
+lg: パソコンの大きさ
+xd: large desktopの大きさ
+==========
+
+[使用方法] 対象項目に、
+
+`@include mq(lg);`
+
+のように使用すると良い。
+*/
+
+$breakpoints: (
+  'sm': 'screen and (min-width: 576px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 992px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
