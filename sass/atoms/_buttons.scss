@@ -1,7 +1,5 @@
-.btn-normal {
-  background-color: $btn-normal;
+%btn-basic {
   border-radius: 0.5rem;
-  color: $white;
   font-family: inherit;
   font-size: 1.5rem;
   font-weight: bold;
@@ -14,8 +12,31 @@
     font-size: 0.75rem;
     padding: 1rem 5rem;
   }
+}
+
+.btn-primary {
+  @extend %btn-basic;
+
+  background-color: $btn-normal;
+  border: 0.15rem solid $btn-normal;
+  color: $white;
 
   &:hover {
     background-color: $btn-hover;
+    border-color: $btn-hover;
+  }
+}
+
+.btn-secondary {
+  @extend %btn-basic;
+
+  background-color: $white;
+  border: 0.15rem solid $btn-normal;
+  color: $btn-normal;
+
+  &:hover {
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+    color: $white;
   }
 }

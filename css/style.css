@@ -420,10 +420,8 @@ template {
   margin-left: -15px;
 }
 
-.btn-normal {
-  background-color: #707070;
+.btn-primary, .btn-secondary {
   border-radius: 0.5rem;
-  color: #fff;
   font-family: inherit;
   font-size: 1.5rem;
   font-weight: bold;
@@ -434,12 +432,31 @@ template {
 }
 
 @media screen and (max-width: 576px) {
-  .btn-normal {
+  .btn-primary, .btn-secondary {
     font-size: 0.75rem;
     padding: 1rem 5rem;
   }
 }
 
-.btn-normal:hover {
+.btn-primary {
+  background-color: #707070;
+  border: 0.15rem solid #707070;
+  color: #fff;
+}
+
+.btn-primary:hover {
   background-color: #4E4E4E;
+  border-color: #4E4E4E;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border: 0.15rem solid #707070;
+  color: #707070;
+}
+
+.btn-secondary:hover {
+  background-color: #4E4E4E;
+  border-color: #4E4E4E;
+  color: #fff;
 }
