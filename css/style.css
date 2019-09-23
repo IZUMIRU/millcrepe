@@ -23,9 +23,23 @@ h1 {
   line-height: 3.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
 }
 
 h3 {
@@ -33,9 +47,23 @@ h3 {
   line-height: 2.625rem;
 }
 
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+
 h4 {
   font-size: 1.5rem;
   line-height: 2.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
 }
 
 h5 {
@@ -43,9 +71,23 @@ h5 {
   line-height: 1.875rem;
 }
 
+@media screen and (min-width: 768px) {
+  h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 h6 {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  h6 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
 }
 
 *,
@@ -55,7 +97,7 @@ h6 {
 }
 
 html {
-  font-family: "YuGothic", Arial;
+  font-family: Arial, "YuGothic";
   line-height: 1.5em;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -67,7 +109,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "YuGothic", Arial;
+  font-family: Arial, "YuGothic";
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5em;
@@ -459,4 +501,22 @@ template {
   background-color: #4E4E4E;
   border-color: #4E4E4E;
   color: #fff;
+}
+
+.contents {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+}
+
+.contents .contents-subtitle {
+  margin-top: -0.5rem;
+}
+
+.contents .contents-text {
+  margin-top: 1rem;
+}
+
+.contents .-under {
+  text-decoration: underline;
 }
