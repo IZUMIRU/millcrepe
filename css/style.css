@@ -520,3 +520,15 @@ template {
 .contents .-under {
   text-decoration: underline;
 }
+
+.member-box > .member-box-img {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.member-box > .member-box-contents {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
