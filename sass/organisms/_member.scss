@@ -1,14 +1,54 @@
-.member-box {
+.box {
+  margin-top: 10rem;
+}
+
+
+.container {
+  &.-member {
+    display: inline-block;
+    margin-top: 2rem;
+
+    @include mq() {
+      margin-top: 5rem;
+      display: flex;
+    }
+  }
 
   > .member-box-img {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+    width: 100%;
+
+    @include mq() {
+      margin-right: 2rem;
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    > .img {
+      width: 100%;
+
+      @include mq() {
+        width: 90%;
+      }
+    }
+
+    > .fab {
+      margin-top: 1rem;
+      margin-right: 0.6rem;
+
+      @include mq(md-max) {
+        display: none;
+      }
+    }
   }
 
   > .member-box-contents {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
+    width: 100%;
+
+    @include mq() {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
   }
 }
