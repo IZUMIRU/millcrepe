@@ -1,7 +1,11 @@
 .box {
-  margin-top: 10rem;
-}
+  margin-top: 5rem;
 
+  @include mq() {
+    margin-top: 10rem;
+  }
+
+}
 
 .container {
   &.-member {

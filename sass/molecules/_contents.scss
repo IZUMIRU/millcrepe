@@ -12,10 +12,9 @@
   }
 
   .contents-title {
-
-  @include mq(md-max) {
-    margin-top: 1rem;
-  }
+    @include mq(md-max) {
+      margin-top: 1rem;
+    }
 
   }
 

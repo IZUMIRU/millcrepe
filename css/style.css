@@ -505,6 +505,26 @@ template {
   color: #fff;
 }
 
+img {
+  border-style: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.image-box {
+  display: grid;
+  margin-top: 3rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-box .img-works {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem gray;
+  grid-column: 1 / 2;
+  margin-bottom: 1rem;
+}
+
 .contents {
   margin: 0;
   padding: 0;
@@ -547,7 +567,13 @@ template {
 }
 
 .box {
-  margin-top: 10rem;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    margin-top: 10rem;
+  }
 }
 
 .container.-member {
