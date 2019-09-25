@@ -323,3 +323,9 @@ template {
   display: none !important;
 }
 
+.-sp-hidden {
+  @include mq(sm) {
+    display: none;
+  }
+}
+
