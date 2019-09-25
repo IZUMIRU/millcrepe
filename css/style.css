@@ -464,6 +464,23 @@ template {
   margin-left: -15px;
 }
 
+.col-work {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .col-work {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
 .btn-primary, .btn-secondary {
   border-radius: 0.5rem;
   font-family: inherit;
@@ -512,7 +529,7 @@ img {
 }
 
 .image-box {
-  display: grid;
+  display: flex;
   margin-top: 3rem;
   object-fit: cover;
   width: 100%;
@@ -521,7 +538,6 @@ img {
 .image-box .img-works {
   border-radius: 1rem;
   box-shadow: 0 0 1rem gray;
-  grid-column: 1 / 2;
   margin-bottom: 1rem;
 }
 
