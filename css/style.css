@@ -413,6 +413,12 @@ template {
   display: none !important;
 }
 
+@media screen and (min-width: 576px) {
+  .-sp-hidden {
+    display: none;
+  }
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -464,7 +470,7 @@ template {
   margin-left: -15px;
 }
 
-.col-work {
+.col {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -472,13 +478,17 @@ template {
 }
 
 @media screen and (min-width: 768px) {
-  .col-work {
+  .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
     max-width: 100%;
   }
+}
+
+.-border {
+  border: 1px solid #000;
 }
 
 .btn-primary, .btn-secondary {
@@ -580,6 +590,16 @@ img {
 
 .contents .-under {
   text-decoration: underline;
+}
+
+.carousel {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    margin-top: 5rem;
+  }
 }
 
 .box {

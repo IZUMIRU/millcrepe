@@ -1,0 +1,7 @@
+.carousel {
+  margin-top: 2rem;
+
+  @include mq() {
+    margin-top: 5rem;
+  }
+}
