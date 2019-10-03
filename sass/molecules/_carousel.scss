@@ -1,5 +1,9 @@
+// TODO WORK関係のデザインfix
+
 .carousel {
+  background-color: $danger;
   margin-top: 2rem;
+  padding: 2rem;
 
   @include mq() {
     margin-top: 5rem;

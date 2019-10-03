@@ -593,7 +593,9 @@ img {
 }
 
 .carousel {
+  background-color: #dc3545;
   margin-top: 2rem;
+  padding: 2rem;
 }
 
 @media screen and (min-width: 768px) {
