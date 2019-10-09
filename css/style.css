@@ -1,0 +1,22 @@
+body {
+  color: #000;
+  font-family: Arial;
+}
+
+.navbar {
+  padding: 3rem 5rem;
+}
+
+.nav-item {
+  margin-right: 3rem;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
