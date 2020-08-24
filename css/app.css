@@ -1,0 +1,366 @@
+/* color */
+/**
+ * default.css(v1.0) 2019/05/10
+ * edited by AKIHIDE Egashira
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica Neue";
+  font-size: 62.5%;
+  height: 100%;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  color: #f7729a;
+  font-family: "YuGothic", "Avenir Next";
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* other */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.img-unabled {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+}
+
+.container header {
+  padding: 4rem 3rem;
+}
+
+@media (min-width: 992px) {
+  .container header {
+    padding: 4rem 0;
+  }
+}
+
+section.top {
+  margin: 0 3rem;
+}
+
+@media (min-width: 992px) {
+  section.top {
+    margin: 0 0 4rem;
+  }
+}
+
+.lead-box {
+  margin: 0 0 6rem;
+}
+
+@media (min-width: 992px) {
+  .lead-box {
+    width: 50%;
+    margin: 0 auto 6rem;
+  }
+}
+
+.lead-box p {
+  border-top: 0.1rem solid #f7729a;
+  border-bottom: 0.1rem solid #f7729a;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 2.4rem 0;
+}
+
+@media (min-width: 992px) {
+  .lead-box p {
+    padding: 3.2rem 0;
+    text-align: center;
+  }
+}
+
+ul.card-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  ul.card-list {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+ul.card-list li.card-box {
+  width: calc(50% - 0.8rem);
+}
+
+@media (min-width: 992px) {
+  ul.card-list li.card-box {
+    width: calc(50% - 3.2rem);
+  }
+}
+
+ul.card-list li.card-box img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  ul.card-list li.card-box img {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+ul.card-list li.card-box .card-box-contents {
+  margin: 2.4rem 0 0;
+}
+
+@media (min-width: 992px) {
+  ul.card-list li.card-box .card-box-contents {
+    text-align: center;
+  }
+}
+
+ul.card-list li.card-box .card-box-contents h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  ul.card-list li.card-box .card-box-contents h3 {
+    font-size: 2.8rem;
+  }
+}
+
+ul.card-list li.card-box .card-box-contents ul {
+  margin: 2.4rem 0;
+}
+
+@media (min-width: 992px) {
+  ul.card-list li.card-box .card-box-contents ul {
+    margin: 1.6rem 0;
+  }
+}
+
+ul.card-list li.card-box .card-box-contents ul li {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.8em;
+}
+
+@media (min-width: 992px) {
+  ul.card-list li.card-box .card-box-contents ul li {
+    font-size: 1.6rem;
+  }
+}
+
+.l-wrap {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .l-wrap {
+    display: flex;
+  }
+}
+
+.l-wrap .l-main {
+  background-color: #f7729a;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .l-wrap .l-main {
+    position: fixed;
+    width: 40%;
+  }
+}
+
+.l-wrap .l-sub {
+  margin: 4rem 3rem;
+}
+
+@media (min-width: 992px) {
+  .l-wrap .l-sub {
+    margin: 0 0 0 auto;
+    padding: 4rem;
+    width: 60%;
+  }
+}
+
+.card-box-portfolio {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.card-box-portfolio .card-box-portfolio-elements {
+  bottom: 0;
+  height: 50%;
+  left: 0;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+
+.card-box-portfolio img {
+  display: block;
+  height: 25rem;
+  margin: 0 auto;
+  width: 25rem;
+}
+
+.card-box-portfolio .card-box-portfolio-contents {
+  color: #fff;
+  margin: 4rem auto 0;
+  width: 25rem;
+}
+
+.card-box-portfolio .card-box-portfolio-contents h3 {
+  font-family: "Avenir Next";
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.card-box-portfolio .card-box-portfolio-contents ul {
+  text-align: center;
+}
+
+.card-box-portfolio .card-box-portfolio-contents ul li {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.8em;
+}
+
+.l-sub section {
+  color: #111;
+  margin: 0 0 6rem;
+}
+
+.l-sub section h3 {
+  font-family: "Avenir Next";
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+
+.l-sub section p {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.8em;
+}
+
+.l-sub section .card-list-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.l-sub section .card-list-work .card-box-work {
+  background-color: rgba(247, 114, 154, 0.2);
+  flex-basis: calc(50% - 0.8rem);
+  margin-bottom: 1.6rem;
+  padding: 0 0 1.2rem;
+  width: calc(50% - 0.8rem);
+}
+
+@media (min-width: 992px) {
+  .l-sub section .card-list-work .card-box-work {
+    flex-basis: calc(33% - 1.6rem);
+    width: calc(33% - 1.6rem);
+    margin-bottom: 3.2rem;
+  }
+}
+
+.l-sub section .card-list-work .card-box-work img {
+  display: block;
+  margin: 0.2rem auto 1.6rem;
+  width: calc(100% - 0.4rem);
+}
+
+.l-sub section .card-list-work .card-box-work h4 {
+  color: #111;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0 0.8rem;
+}
+
+.l-sub section .card-list-work .card-box-work p {
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0.8rem;
+}

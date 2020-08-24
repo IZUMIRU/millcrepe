@@ -1,0 +1,27 @@
+{
+  "name": "millcrepe",
+  "version": "1.0.0",
+  "description": "フリーランスチームギルド\"millcrepe\"のcorporate website。 開発言語は - HTML5 - CSS3 - Sass - JS - jQuery の5つを使用。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IZUMIRU/millcrepe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IZUMIRU/millcrepe/issues"
+  },
+  "homepage": "https://github.com/IZUMIRU/millcrepe#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
