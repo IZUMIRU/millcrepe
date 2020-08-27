@@ -294,6 +294,21 @@ ul.card-list li.card-box .card-box-contents ul li {
   text-align: center;
 }
 
+.card-box-portfolio .card-box-portfolio-contents ul.sns {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.card-box-portfolio .card-box-portfolio-contents ul.sns li {
+  margin: 0 1.2rem;
+}
+
+.card-box-portfolio .card-box-portfolio-contents ul.sns li i::before {
+  color: #fff;
+  font-size: 2rem;
+}
+
 .card-box-portfolio .card-box-portfolio-contents ul li {
   font-size: 1.6rem;
   font-weight: normal;
@@ -312,8 +327,26 @@ ul.card-list li.card-box .card-box-contents ul li {
   line-height: 1.8em;
 }
 
+.l-sub section h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+
+.l-sub section h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+
 .l-sub section p {
   font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.8em;
+}
+
+.l-sub section .list-myself {
+  font-size: 1.2rem;
   font-weight: normal;
   line-height: 1.8em;
 }
@@ -363,4 +396,28 @@ ul.card-list li.card-box .card-box-contents ul li {
   line-height: 1.5em;
   margin: 0;
   padding: 0.8rem;
+}
+
+.section-movies .card-list-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-movies .card-list-movies li {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .section-movies .card-list-movies li {
+    flex-basis: calc(50% - 0.8rem);
+    width: calc(50% - 0.8rem);
+  }
+}
+
+.section-movies .card-list-movies li iframe {
+  width: 100%;
+  height: 200px;
 }
